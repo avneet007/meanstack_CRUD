@@ -10,7 +10,7 @@ window.onload = function() {
 			if (ajaxRequest) {
 			// if the object was created successfully
 			ajaxRequest.onreadystatechange = ajaxResponse;
-			ajaxRequest.open("GET", "http://localhost:3000/api/user"); // Where?
+			ajaxRequest.open("GET", "/api/user"); // Where?
 			ajaxRequest.send(null);
 			}
 
@@ -96,7 +96,7 @@ function deleteRecord(id){
 			if (ajaxRequest) {
 			// if the object was created successfully
 			ajaxRequest.onreadystatechange = ajaxResponse;
-			ajaxRequest.open("DELETE", "http://localhost:3000/api/user/"+id); // Where?
+			ajaxRequest.open("DELETE", "/api/user/"+id); // Where?
 			ajaxRequest.send(null);
 			}
     

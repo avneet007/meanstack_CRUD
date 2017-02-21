@@ -76,7 +76,7 @@ window.onload = function() {
 			if (ajaxRequest) {
 			// if the object was created successfully
 			ajaxRequest.onreadystatechange = ajaxResponse;
-			ajaxRequest.open("GET", "http://localhost:3000/api/user/"+id); // Where?
+			ajaxRequest.open("GET", "/api/user/"+id); // Where?
 			ajaxRequest.send(null);
 			}
 
@@ -102,7 +102,6 @@ function ajaxResponse() {//This gets called when the readyState changes.
 
           }
 }
-
 
 
 function loadProfile(profileObj){
